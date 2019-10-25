@@ -42,7 +42,7 @@ k = 7
 ret, label, center = cv2.kmeans(tam, k, None, criteria, 10, cv2.KMEANS_PP_CENTERS)
 
 count = np.zeros((7, 1), dtype=int)  # Ma tran count luu so cham den cung 1 vung
-font = cv2.FONT_HERSHEY_SIMPLEX
+font = cv2.FONT_HERSHEY_COMPLEX
 for i in label:  # Ma tran chua so vung cua tung xuc xuat
     count[i] = count[i] + 1  # count chu so cham trong tung vung
 for i in range(len(count)):
